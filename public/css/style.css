@@ -1,0 +1,24 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #001f3f;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
