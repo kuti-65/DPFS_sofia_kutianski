@@ -1,0 +1,18 @@
+<%- include('../partials/head') %>
+<body>
+  <%- include('../partials/header') %>
+  <main class="container">
+    <h1><%= title %></h1>
+    <form action="/products/update" method="post">
+      <label>Nombre: <input type="text" name="name" value="Producto existente"></label><br>
+      <label>Descripción: <textarea name="description">Descripción actual</textarea></label><br>
+      <label>Imagen: <input type="text" name="image" value="imagen.jpg"></label><br>
+      <label>Categoría: <input type="text" name="category" value="Filamentos"></label><br>
+      <label>Colores: <input type="text" name="colors" value="Rojo, Azul"></label><br>
+      <label>Precio: <input type="number" name="price" value="1000"></label><br>
+      <button type="submit">Guardar cambios</button>
+    </form>
+  </main>
+  <%- include('../partials/footer') %>
+</body>
+</html>
