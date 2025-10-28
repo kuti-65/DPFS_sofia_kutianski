@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyShop - Carrito</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyShop</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productCart.html">Carrito</a>
+      <a href="register.html">Registro</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Tu Carrito</h1>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Producto 1</td>
+          <td>$25.00</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$25.00</td>
+          <td><button class="btn">Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cart-summary">
+      <p><strong>Total: $25.00</strong></p>
+      <a href="#" class="btn">Proceder al pago</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyShop - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
