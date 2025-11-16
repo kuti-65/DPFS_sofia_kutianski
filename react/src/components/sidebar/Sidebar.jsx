@@ -1,7 +1,5 @@
 import '../../App.css';
-import logo from '../../assets/modelify.png'
-import viteLogo from '/vite.svg'
-import reactLogo from '../../assets/react.svg'
+
 import { Link } from 'react-router-dom'
 
 export const Sidebar = () => {
@@ -9,15 +7,7 @@ export const Sidebar = () => {
     <div className='navbar'>
       <div className="title-dashboard">
         <ul className="list-title" >
-          <li>
-            <img src={reactLogo} alt="logo React" />
-          </li>
-          <li>
-            <img src={logo} className="logo" alt="logo" />
-          </li>
-          <li>
-            <img src={viteLogo} alt="logo Vite" />
-          </li>
+          
         </ul>
       </div>
       <div className="link-options">

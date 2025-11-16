@@ -20,8 +20,8 @@ export const Catalog = () => {
                             <div key={m.id} className='model lastM'>
                                 <h4>{m.name}</h4>
                                 <div className="image-model">
-                                    <Link to={/product-detail/${m.id}}>
-                                        <img src={m.image} alt="imagen del producto" />
+                                    <Link to={`/product-detail/${m.id}`}>
+                                        <img src={m.imageUrl} alt="imagen del producto" />
                                     </Link>
                                 </div>
                                 <p>${m.price}</p>
