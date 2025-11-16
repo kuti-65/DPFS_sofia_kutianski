@@ -1,5 +1,7 @@
 const port = 3000;
 const db = require('./database/models');
+const usersApiRoutes = require('./routes/api/users.api.routes');
+const productsApiRoutes = require('./routes/api/products.api.routes');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -24,11 +26,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
+/* 
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
+*/
 // error handler
+/*
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
@@ -38,6 +42,9 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+*/
+app.use("/api/users", usersApiRoutes);
+app.use("/api/products", productsApiRoutes);
 
 app.listen(port, async()=>console.log(
 
