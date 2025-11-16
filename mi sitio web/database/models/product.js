@@ -5,6 +5,11 @@ module.exports = (sequelize, DataTypes)=> {
     const alias = 'Product'
 
     const cols = {
+        id: {
+            type: DataTypes.INTEGER.UNSIGNED,
+            primaryKey: true,
+            autoIncrement: true
+        },
         name: {
             type: DataTypes.STRING(255),
             validate:{
@@ -37,7 +42,7 @@ module.exports = (sequelize, DataTypes)=> {
     const config = {
         tableName: 'products',
         //paranoid: true,
-        //timestamps:true
+        timestamps:false
     }
 
     const Product = sequelize.define(alias, cols, config);
