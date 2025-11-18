@@ -2,6 +2,7 @@ const port = 3000;
 const db = require('./database/models');
 const usersApiRoutes = require('./routes/api/users.api.routes');
 const productsApiRoutes = require('./routes/api/products.api.routes');
+const cors = require('cors');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -15,7 +16,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
+// Permitir solicitudes desde el frontend
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

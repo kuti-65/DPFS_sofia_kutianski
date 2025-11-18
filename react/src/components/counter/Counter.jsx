@@ -28,7 +28,7 @@ export const Counter = () => {
             <ul className="list-count">
               <li>productos: {models.count}</li>
               <li>usuarios: {users.count}</li>
-              <li>categorias: {categories.count}</li>
+              
             </ul>
           </div>
           <div></div>
